@@ -10,7 +10,16 @@ $Correcedad = "/^[0-9]{2}$/";
 $mensaje = "";
 
 
+    
+    
+
     if($_SERVER["REQUEST_METHOD"] === "POST"){
+
+        $pais = $_POST["pais"];
+        if($pais == ""){
+            $mensaje = "introduzca pais";
+        }
+
         if(isset($_POST["nombre"])){
             $nombre = $_POST["nombre"];
             
