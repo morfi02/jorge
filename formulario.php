@@ -49,20 +49,11 @@ $mensaje = "";
 
 
         if ($mensaje == ""){
-            $mensaje = "correcto";
-         
-            $_SESSION["mensaje"] = $mensaje;
+            header("location: informacion.php");
+            exit();
         }
-        header("location: informacion.php");
-        exit();
-        }
-
         
-
-    
-
-
-
+        }
 
 ?>
 
